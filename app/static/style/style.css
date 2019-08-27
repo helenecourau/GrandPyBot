@@ -1,5 +1,10 @@
 body {
     font-family: "Open Sans", sans-serif;
+    height: 98%;
+}
+
+html {
+    height: 98%;
 }
 
 header {

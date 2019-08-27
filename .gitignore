@@ -3,3 +3,5 @@
 /virtualenv
 .flaskenv
 app/__pycache__
+script/api_key.py
+script/__pycache__
