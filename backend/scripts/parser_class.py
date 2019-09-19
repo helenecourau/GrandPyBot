@@ -12,7 +12,7 @@ def parser(user_value, file):
     i, final_list = 0, []
 
     # init path for java and StanfordPOSTagger
-    #os.environ['JAVAHOME'] = c.java_path
+    os.environ['JAVAHOME'] = c.java_path
 
     # read stop_word file
     stop_word_file = open(file, "r")
