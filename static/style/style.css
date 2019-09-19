@@ -1,0 +1,173 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 98%;
+    color: #6b8686;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    background-color: #6b8686;
+    display: flex;
+    width: 98%;
+    padding: 1%;
+}
+
+h1
+{
+    color: white;
+    margin: auto;
+}
+
+/* Form elements */
+
+.container
+{
+    margin-top: 20px;
+}
+
+input
+{
+    color: #6b8686;
+    border-color: #6b8686;
+    font-family: "Open Sans", sans-serif;
+    width: 98.8%;
+    height: 50px;
+    margin-top: 5px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+button
+{
+    color: #fff;
+    background-color: #6b8686;
+    border: none;
+    margin-top: 7px;
+    height: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Loader */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Answer zone */
+
+#grandpy
+{
+    display: flex;
+    width: 98%;
+}
+
+#answer
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* Image of the answer zone */
+
+#grandpy img
+{
+    width: 95%;
+    height: 95%;
+    margin-bottom: 2%
+}
+
+#img
+{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 22%;
+    margin-bottom: 1.5%
+}
+
+#img a
+{
+    color: #6b8686;
+}
+
+/* Footer elements */
+
+footer
+{
+    background-color: #6b8686;
+    width: 98%;
+    padding: 0.5%;
+    margin-top : 0.5%;
+}
+
+footer p
+{
+    color: white;    
+}
+
+footer a
+{
+    color: white;    
+    text-decoration: none;
+}
+
+/* Responsive design elements */
+
+@media screen and (max-width: 1280px)
+{
+    header 
+    {
+        margin: auto;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    h1
+    {
+        font-size: 16px;
+        align-items: center;
+    }
+
+    header img
+    {
+        width: 30%;
+        height: 30%;
+    }
+
+    #img
+    {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    #answer
+    {
+        width: 100%;
+    }
+
+    #grandpy
+    {
+        min-height: 25%;
+    }
+
+    input
+    {
+        margin-top: 7%; 
+        margin-bottom: 6%;
+    }
+
+    #loader
+    {
+        margin-top: 10%;
+    }
+
+    button
+    {
+        height: 40px;
+    }
+}

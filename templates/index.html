@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8" />
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}">
+        <link rel="icon" type="image/png" href="../static/img/grandpy_fav.png" />
+        <title>GrandPyBot</title>
+    </head>
+    <body>
+
+        <header>
+            <img src="../static/img/grandpy.png" alt="logo" class="img" />
+            <h1>Pose des questions à GrandPy !</h1>
+        </header>
+
+        <div class="container">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="questionInput">Entre ta question : </label>
+                    <input type="question" class="form-control" id="questionInput">
+                </div>
+                <button type="submit" class="btn btn-default">Poser la question</button>
+            </form>
+            <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+        </div>
+
+        <div id="loader"></div> 
+
+        <div id="grandpy">
+            <div id="img">
+                <img src="../static/img/grandpy_img.png" alt="GrandPy" class="img" />
+                <figcaption><a href="https://pixabay.com/fr/illustrations/vieux-l-homme-senior-personne-1214535/" target="_blank">Image de bamenny</a></figcaption>
+            </div>
+            <div id="answer">
+                <div id="sentencePlace"></div>
+                <div id="wikiPlace"></div>
+                <div id="adressPlace"></div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLe8Mj79jeDmdoMwVfy4FWIxsGNgj8xv4&callback=initMap"></script>
+        <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+        <script src="../static/js/ajax.js"></script>
+        <script src="../static/js/javascript.js"></script>
+
+        <footer>
+            <p>Hélène Courau</p>
+            <p><a href="https://github.com/helenecourau">Github</a></p>
+        </footer>
+
+    </body>
+</html>

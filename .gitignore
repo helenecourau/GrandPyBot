@@ -2,6 +2,11 @@
 /__pycache__
 /virtualenv
 .flaskenv
-app/__pycache__
-script/api_key.py
-script/__pycache__
+backend/api_key.py
+backend/__pycache__
+backend/.pytest_cache
+backend/scripts/__pycache__
+backend/scripts/.pytest_cache
+backend/scripts/resources/__pycache__
+backend/scripts/resources/.pytest_cache
+pylint
