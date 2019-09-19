@@ -16,7 +16,6 @@ $(document).ready(function() {
 			if (data.error) {
 				$('#errorAlert').text(data.error).show();
 			} else {
-				console.log(data.title, data.lat)
 				if (data.lat!==0) {
 					var lat = data.lat;
 					var lng = data.lng;
