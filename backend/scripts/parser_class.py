@@ -2,6 +2,7 @@
 import os
 import re
 import unidecode
+import nltk
 from nltk.tag import StanfordPOSTagger
 
 from backend.scripts.resources import constants as c
