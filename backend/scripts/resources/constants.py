@@ -5,7 +5,7 @@ key = "&key="
 #For parser
 jar = 'backend/scripts/resources/stanford-postagger-full-2017-06-09/stanford-postagger.jar'
 model = 'backend/scripts/resources/stanford-postagger-full-2017-06-09/models/french.tagger'
-java_path = "C:/Program Files/Java/jre1.8.0_221/bin/javaw.exe"
+java_path = "backend/scripts/resources/javaw.exe"
 
 grandPy_sentences =["Voilà mon poussin !",
 "Ah ça me rappelle le bon vieux temps !",
