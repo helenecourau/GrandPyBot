@@ -12,6 +12,7 @@ cheroot==6.5.8
 CherryPy==18.2.0
 Click==7.0
 colorama==0.4.1
+Corpora==1.0
 coverage==4.5.4
 cycler==0.10.0
 decorator==4.4.0
@@ -74,6 +75,7 @@ pytest==5.1.0
 pytest-cov==2.7.1
 python-dateutil==2.8.0
 pytz==2019.2
+pywin32==224
 pywinpty==0.5.5
 pyzmq==18.1.0
 qtconsole==4.5.2
