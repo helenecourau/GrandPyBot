@@ -1,9 +1,7 @@
 wordnet
 maxent_treebank_pos_tagger
-knbc
 brown_tei
 averaged_perceptron_tagger_ru
-pl196x
 snowball_data
 nombank.1.0
 reuters
