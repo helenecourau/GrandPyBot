@@ -4,12 +4,4 @@ jeita
 product_reviews_1
 omw
 sentiwordnet
-product_reviews_2
-abc
-udhr2
-senseval
-words
-framenet_v15
-unicode_samples
-kimmo
-framenet_v17
+
