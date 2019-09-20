@@ -1,7 +1,3 @@
-jeita
-twitter_samples
-mte_teip5
-punkt
 maxent_ne_chunker
 europarl_raw
 omw
