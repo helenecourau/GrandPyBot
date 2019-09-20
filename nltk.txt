@@ -1,4 +1,3 @@
-wordnet_ic
 wordnet
 maxent_treebank_pos_tagger
 knbc
