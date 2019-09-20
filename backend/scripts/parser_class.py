@@ -2,13 +2,9 @@
 import os
 import re
 import unidecode
-import nltk
 from nltk.tag import StanfordPOSTagger
 
 from backend.scripts.resources import constants as c
-
-nltk.internals.config_java("backend/scripts/resources/Java/javapath_target_7607531/java.exe")
-
 
 def parser(user_value, file):
     '''StanfordPOSTagger for remove verbs, remove, stop words and formate value'''
