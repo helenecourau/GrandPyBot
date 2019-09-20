@@ -1,7 +1,3 @@
-word2vec_sample
-universal_treebanks_v20
-bllip_wsj_no_aux
-timit
 jeita
 twitter_samples
 mte_teip5
