@@ -1,6 +1,4 @@
 wordnet_ic
-comtrans
-moses_sample
 wordnet
 maxent_treebank_pos_tagger
 knbc
