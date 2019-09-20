@@ -1,11 +1,9 @@
 wordnet
 maxent_treebank_pos_tagger
-brown_tei
 averaged_perceptron_tagger_ru
 snowball_data
 nombank.1.0
 reuters
-machado
 cess_cat
 propbank
 crubadan
