@@ -2,20 +2,17 @@
 import os
 import re
 import unidecode
-from nltk.tag import StanfordPOSTagger
 
 from backend.scripts.resources import constants as c
 
 def parser(user_value, file):
-    '''StanfordPOSTagger for remove verbs, remove, stop words and formate value'''
-    i, final_list = 0, []
 
-    # init path for java and StanfordPOSTagger
-    os.environ['JAVAHOME'] = c.java_path
+    i, final_list = 0, []
 
     # read stop_word file
     stop_word_file = open(file, "r")
     stop_word = stop_word_file.read()
+    stop_word = stop_word.split(",")
 
     # lower case
     user_value = user_value.lower()
@@ -25,12 +22,9 @@ def parser(user_value, file):
     user_value = re.sub('[\']', ' ', user_value)
     user_value = re.split('[ -/]', user_value)
 
-    pos_tagger = StanfordPOSTagger(c.model, c.jar, encoding='utf8')
-    user_value = pos_tagger.tag(user_value)
-
     for i in user_value:
-        if i[1] not in ['V', 'VINF', 'ADVWH', 'P', 'ADV', 'C', 'CLS'] and unidecode.unidecode(i[0]) not in stop_word:
-            final_list.append(i[0])
+        if unidecode.unidecode(i) not in stop_word:
+            final_list.append(i)
     user_value = " ".join(final_list)
 
     return user_value
