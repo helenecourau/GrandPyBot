@@ -27,4 +27,4 @@ def parser(user_value, file):
             final_list.append(i)
     user_value = " ".join(final_list)
 
-    return user_value
+    return user_value.strip()
