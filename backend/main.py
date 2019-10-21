@@ -22,8 +22,9 @@ class ParseRequest:
         then Wikimedia API and init random sentence for GrandPy.'''
 
         try:
-            user_value = p.parser(user_value,
-                                  'backend/scripts/resources/stop_words_fr.json')
+            parser_user = p.ParserUser()
+            user_value = parser_user.parser(user_value,
+                'backend/scripts/resources/stop_words_fr.json')
 
             url = c.url + user_value + c.key + a.maps_key
             url_alt = c.url + user_value + c.key + a.maps_key + '&language=fr-FR'
@@ -58,7 +59,6 @@ class ParseRequest:
 
             number = random.randint(0, len(c.grandPy_sentences)-1)
             self.random_sentence = c.grandPy_sentences[number]
-        
+
         except:
             pass
-

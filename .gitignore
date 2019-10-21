@@ -3,10 +3,10 @@
 /virtualenv
 .flaskenv
 backend/api_key.py
-backend/__pycache__
+backend/__pycache__/
 backend/.pytest_cache
-backend/scripts/__pycache__
+backend/scripts/__pycache__/
 backend/scripts/.pytest_cache
-backend/scripts/resources/__pycache__
+backend/scripts/resources/__pycache__/
 backend/scripts/resources/.pytest_cache
 pylint
