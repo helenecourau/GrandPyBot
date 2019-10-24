@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 	$('form').on('submit', function(event) {
-		clean()
 		$('#errorAlert').hide();
+		$('#loaderImp').remove();
 		loader()
 		$.ajax({
 			data : {
